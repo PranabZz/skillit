@@ -24,16 +24,16 @@
       src="https://kit.fontawesome.com/06d65daeff.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
   <body class="bg-gray-100">
     <!--Navbar-->
-    <nav class="p-1 bg-white flex md:inset-x-0 md:fixed items-center justify-between text-gray-600">
-      <span class=""
-      ><img src="img/prime-logo.png" class="w-1/2 ml-6" >
-    </span>
+    <nav
+      class="p-1 bg-white flex md:inset-x-0 md:fixed items-center justify-between text-gray-600"
+    >
+      <span class=""><img src="img/prime-logo.png" class="w-1/2 ml-6" /> </span>
       <div class="p-3">
         <ul class="flex space-x-4 cursor-pointer">
           <a href="workshops.html">Workshop</a>
@@ -44,11 +44,13 @@
     </nav>
     <!--Image-->
     <section>
-      <img src="img/image3.png" class="w-full md:h-full h-40">
+      <img src="img/image3.png" class="w-full h-auto" />
     </section>
 
     <!--Workshop Title-->
-    <div class="min-h-screen w-full p-8 md:p-16 content-center shadow-2xl shadow-gray-700">
+    <div
+      class="min-h-screen w-full p-8 md:p-16 content-center shadow-2xl shadow-gray-700"
+    >
       <h1
         class="header text-center text-2xl font-mono sm:text-3xl uppercase font-semibold"
       >
@@ -58,75 +60,128 @@
         Please select the sessions you want to take part in
       </p>
       <!--Cards section-->
-      <div class="flex flex-wrap gap-16 justify-center py-16">
-        <!--Cards css-->
-        <div class="bg-white w-96 rounded-3xl">
-            <div class="bg-blue-400 p-4 rounded-t-2xl text-white text-3xl">Lorem, ipsum.</div>
-            <div class="bg-white p-4 rounded-3xl ">
-                <h1 class="text-2xl pb-4" >Guest Speaker</h1>
-                <p class="pb-2">Date of event</p>
-                <p>Time of event</p>
-            </div>
+      <div class="flex md:flex-cols flex-wrap justify-center gap-16 py-16">
+        <!--Cards css 1-->
+        <div class="shadow-gray-2xl w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
         </div>
         <!--End Card-->
-        <!--Cards css-->
-        <div class="bg-white w-96 rounded-3xl">
-            <div class="bg-blue-400 p-4 rounded-t-2xl text-white text-3xl">Lorem, ipsum.</div>
-            <div class="bg-white p-4 rounded-3xl ">
-                <h1 class="text-2xl pb-4" >Guest Speaker</h1>
-                <p class="pb-2">Date of event</p>
-                <p>Time of event</p>
-            </div>
+        <!--Cards css 1-->
+        <div class="w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
         </div>
-        <!--End Card-->
-        <!--Cards css-->
-        <div class="bg-white w-96 rounded-3xl">
-            <div class="bg-blue-400 p-4 rounded-t-2xl text-white text-3xl">Lorem, ipsum.</div>
-            <div class="bg-white p-4 rounded-3xl ">
-                <h1 class="text-2xl pb-4" >Guest Speaker</h1>
-                <p class="pb-2">Date of event</p>
-                <p>Time of event</p>
-            </div>
-        </div>
-        <!--End Card-->
-        <!--Cards css-->
-        <div class="bg-white w-96 rounded-3xl">
-            <div class="bg-blue-400 p-4 rounded-t-2xl text-white text-3xl">Lorem, ipsum.</div>
-            <div class="bg-white p-4 rounded-3xl ">
-                <h1 class="text-2xl pb-4" >Guest Speaker</h1>
-                <p class="pb-2">Date of event</p>
-                <p>Time of event</p>
-            </div>
-        </div>
-        <!--End Card-->
-        <!--Cards css-->
-        <div class="bg-white w-96 rounded-3xl">
-            <div class="bg-blue-400 p-4 rounded-t-2xl text-white text-3xl">Lorem, ipsum.</div>
-            <div class="bg-white p-4 rounded-3xl ">
-                <h1 class="text-2xl pb-4" >Guest Speaker</h1>
-                <p class="pb-2">Date of event</p>
-                <p>Time of event</p>
-            </div>
-        </div>
-        <!--End Card-->
-        <!--Cards css-->
-        <div class="bg-white w-96 rounded-3xl">
-            <div class="bg-blue-400 p-4 rounded-t-2xl text-white text-3xl">Lorem, ipsum.</div>
-            <div class="bg-white p-4 rounded-3xl ">
-                <h1 class="text-2xl pb-4" >Guest Speaker</h1>
-                <p class="pb-2">Date of event</p>
-                <p>Time of event</p>
-            </div>
-        </div>
-        <!--End Card-->
       </div>
+      <!--End Card-->
+
+      <!--Card section-->
+      <div class="flex md:flex-cols flex-wrap justify-center gap-16 py-16">
+        <!--Cards css 2-->
+        <div class="shadow-gray-2xl w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
+        </div>
+        <!--End Card-->
+
+        <!--Cards css 2-->
+        <div class="w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
+        </div>
+      </div>
+      <!--End Card-->
+
+      <!--Card section-->
+      <div class="flex md:flex-cols flex-wrap justify-center gap-16 py-16">
+        <!--Cards css 3 -->
+        <div class="shadow-gray-2xl w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
+        </div>
+        <!--End Card-->
+
+        <!--Cards css 3-->
+        <div class="w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
+        </div>
+      </div>
+      <!--End Card-->
+
+      <!--Card Section-->
+      <div class="flex md:flex-cols flex-wrap justify-center gap-16 py-16">
+        <!--Cards css-->
+        <div class="shadow-gray-2xl w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
+        </div>
+        <!--End Card-->
+
+        <!--Cards css-->
+        <div class="w-96 rounded-3xl bg-white">
+          <div class="rounded-t-2xl bg-blue-400 p-4 text-3xl text-white">
+            Lorem, ipsum.
+          </div>
+          <div class="rounded-3xl bg-white p-4">
+            <h1 class="pb-4 text-2xl">Guest Speaker</h1>
+            <p class="pb-2">Date of event</p>
+            <p>Time of event</p>
+          </div>
+        </div>
+      </div>
+
+      <!--End Card-->
     </div>
+    <!--End of worksop/session cards-->
 
     <!--Footer-->
     <footer
       class="bg-white p-4 grid grid-cols-2 justify-between bg-white shadow-2xl text-center"
     >
-    <div class="text-gray-600">Prime IT club 2022 &copy;</div>
+      <div class="text-gray-600">Prime IT club 2022 &copy;</div>
       <div class="space-x-6 cursor-pointer">
         <a><i class="fa-2x fa-brands fa-facebook-square"></i></a>
         <a><i class="fa-2x fa-brands fa-instagram"></i></a>
