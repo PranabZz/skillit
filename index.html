@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Fa icons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/06d65daeff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body class="bg-gray-100">
+    <!--Navbar-->
+    <nav
+      class="p-1 bg-white flex md:inset-x-0 md:fixed items-center justify-between text-gray-600"
+    >
+      <span class=""><img src="img/prime-logo.png" class="w-1/2 ml-6" /> </span>
+      <div class="p-3">
+        <ul class="flex space-x-4 cursor-pointer">
+          <a href="workshops.html">Workshop</a>
+          <a href="session.html">Session</a>
+          <a href="session.html">Profile</a>
+        </ul>
+      </div>
+    </nav>
+    <!--Countdown-->
+    <div
+      class="flex flex-wrap p-2 w-full max-h-screen gap-2 justify-center items-center overflow-hidden md:p-32"
+      id="timer"
+    >
+      <div class="grid grid-cols-3 text-center items-center justify-center">
+        <div class="flex col-span-3 justify-center">
+          <img class="h-24 w-auto" src="img/SkillItv1.png" alt="" />
+        </div>
+        <div class="p-4 text-center shadow-2xl">
+          <p
+            class="text-2xl text-orange-500 p-2 md:text-5xl text-center"
+            id="days"
+          ></p>
+          <p class="text-md text-white md:text-lg">Days</p>
+        </div>
+        <div class="p-4 text-center shadow-2xl">
+          <p
+            class="text-2xl text-orange-500 p-2 text-center ter md:text-5xl"
+            id="hrs"
+          ></p>
+          <p class="text-md text-white md:text-lg">Hours</p>
+        </div>
+        <div class="p-4 text-center shadow-2xl">
+          <p
+            class="text-2xl text-orange-500 p-2 text-center ter md:text-5xl"
+            id="mins"
+          ></p>
+          <p class="text-sm text-white md:text-lg">Minutes</p>
+        </div>
+        <p class="col-span-3">
+          <button
+            class="mt-5 px-5 py-1 bg-orange-500 rounded-2xl text-white font-extrabold hover:bg-orange-600"
+          >
+            Register now
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <!--About section-->
+    <div id="about" class="justify-center items-center grid grid-cols-4">
+      <div class="p-16 col-span-2">
+        <h1 class="font-extrabold text-cyan-500 text-5xl">Skill IT</h1>
+        <p class="py-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          obcaecati odit reiciendis eius suscipit. Mollitia qui soluta maxime
+          impedit quis molestiae consectetur adipisci nam accusamus cum
+          reiciendis animi perspiciatis voluptas, quos incidunt.
+        </p>
+      </div>
+      <div class="col-span-2 md:p-10 justify-center content-center">
+        <img class="md:h-auto h-80" src="img/about.png" alt="" />
+      </div>
+    </div>
+
+    <!--Events Card-->
+    <div class="bg-gray-200 w-full max-h-screen">
+      <h1 class="text-center p-4 font-extrabold text-cyan-500 text-5xl">
+        Events
+      </h1>
+      <!--Cards-->
+      <div class="card">
+          <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloribus praesentium odio quae officiis id non expedita laudantium officia perferendis? Reiciendis atque voluptatum illum?</p>
+          </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer
+      class="bg-white p-4 grid grid-cols-2 justify-between bg-white shadow-2xl text-center"
+    >
+      <div class="text-gray-600">Prime IT club 2022 &copy;</div>
+      <div class="space-x-6 cursor-pointer">
+        <a><i class="fa-2x fa-brands fa-facebook-square"></i></a>
+        <a><i class="fa-2x fa-brands fa-instagram"></i></a>
+        <a><i class="fa-2x fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  const FinalDay = new Date("Aug 3, 2022 00:00:00").getTime();
+
+  // Updating the count down every 1 second
+  const x = setInterval(function () {
+    const now = new Date().getTime();
+
+    const DayLeft = FinalDay - now;
+    const days = Math.floor(DayLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (DayLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((DayLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((DayLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hrs").innerHTML = hours;
+    document.getElementById("mins").innerHTML = minutes;
+    document.getElementById("sec").innerHTML = seconds;
+
+    if (DayLeft < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
