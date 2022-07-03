@@ -10,6 +10,10 @@ module.exports = {
       '700' : '700px',
       '350' : '350px'
     },
+    colors:{
+      'prime-orange' : '#ff5b22',
+      'prime-blue' : '#02afef',
+    },
   },
   plugins: [],
 }
